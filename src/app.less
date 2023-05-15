@@ -1,0 +1,99 @@
+/*---------- default ---------*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+  list-style-type: none;
+}
+
+input,
+select,
+button,
+textarea {
+  font-size: 14px;
+  font-family: 'PingFang SC', 'Microsoft YaHei', Verdana, Arial, Helvetica, Tahoma, serif;
+  vertical-align: middle;
+}
+
+img {
+  border: none;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: block;
+}
+
+body {
+  --page-background-color: #fff;
+  --text-color-primary: #222222;
+  --text-color-secondary: #888888;
+  --default-font-size: 12px;
+  --default-font-weight: 500;
+
+  background-color: var(--page-background-color);
+
+  color: var(--text-color-primary);
+  font-size: var(--default-font-size);
+  font-weight: var(--default-font-weight);
+  font-family: 'PingFang SC', 'Microsoft YaHei', Verdana, Arial, Helvetica, Tahoma, serif;
+
+  box-sizing: border-box;
+}
+
+/*---------- 覆盖antd ---------*/
+@primary-color: #50beff;
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 0; //initial
+}
+
+a:hover {
+  color: inherit;
+}
+
+/*----------  ---------*/
+.text-nor {
+  color: var(--text-color-primary);
+}
+
+.text-suc {
+  color: var(--theme-primaryColor);
+}
+
+.text-err {
+  color: #fa7171;
+}
+
+.gload-input {
+  padding: 12px;
+  width: calc(100% - 24px);
+  height: 160px;
+}

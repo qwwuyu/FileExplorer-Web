@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    
+    "removeComments": false,//是否移除注释。
+    "preserveConstEnums": true,//是否保留常量枚举类型。
+    "moduleResolution": "node",//模块解析方式。
+    "experimentalDecorators": true,//是否开启装饰器的实验性支持。
+    "noImplicitAny": false,//是否禁止隐式的 any 类型。
+    "allowSyntheticDefaultImports": true,//是否允许默认导入时使用非默认导出的模块。
+    "outDir": "lib",//输出目录。
+    "noUnusedLocals": false,//是否禁止未使用的局部变量。
+    "noUnusedParameters": false,//是否禁止未使用的函数参数。
+    "strictNullChecks": true,//是否开启严格的 null 检查。
+    "sourceMap": true,//是否生成 source map。
+    "baseUrl": ".",//相对于 tsconfig.json 文件的基本路径。
+    "rootDir": ".",//项目中源代码的根目录。
+    "jsx": "react-jsx",//如何处理 JSX 语法。
+    "allowJs": true,//是否允许编译 JavaScript 文件。
+    "resolveJsonModule": true,//是否允许导入 JSON 文件。
+    "typeRoots": [ "node_modules/@types", "src/constants" ],//TypeScript 类型声明文件所在的目录。
+    "types": ["node"],//项目中需要使用的第三方类型声明文件。
+
+    "esModuleInterop": true, // 允许export=导出，由import from 导入
+    "forceConsistentCasingInFileNames": true,
+    "strict": true, // 开启所有严格的类型检查
+    "skipLibCheck": true,
+    "paths": { //路径映射，用于将模块名映射为文件路径。
+      "@src/*":        [ "./src/*" ],
+      "@api/*":        [ "./src/api/*" ],
+      "@assets/*":     [ "./src/assets/*" ],
+      "@components/*": [ "./src/components/*" ],
+      "@constants/*":  [ "./src/constants/*" ],
+      "@hooks/*":      [ "./src/hooks/*" ],
+      "@common/*":     [ "./src/common/*" ],
+      "@pages/*":      [ "./src/pages/*" ],
+      "@redux/*":      [ "./src/redux/*" ]
+    }
+  },
+  "include": ["./src","./types"],//需要包含在编译中的文件或文件夹。
+  "compileOnSave": false,
+}

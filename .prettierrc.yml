@@ -1,0 +1,17 @@
+semi: true #结尾分号
+singleQuote: true #单引号包裹字符串
+jsxSingleQuote: true
+trailingComma: es5 # 行尾逗号,默认es5可选 none|es5|all
+arrowParens: always #  箭头函数参数括号 默认avoid 可选 avoid| always
+
+tabWidth: 2 # tab缩进大小,默认为2
+useTabs: false # 使用tab缩进，默认false
+printWidth: 120 #
+proseWrap: preserve
+quoteProps: as-needed
+bracketSpacing: true #对象中的空格 true默认 true: { foo: bar } false: {foo: bar}
+jsxBracketSameLine: false #JSX标签闭合位置 默认false >换行 
+
+#insertPragma: false
+#requirePragma: false
+#rangeStart: 0

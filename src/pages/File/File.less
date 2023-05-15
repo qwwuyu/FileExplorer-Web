@@ -1,0 +1,226 @@
+//
+.layout-file {
+  width: 100%;
+  height: calc(100vh - 48px);
+  display: flex;
+  flex-direction: column;
+
+  //
+  .layout-func {
+    display: flex;
+    height: 40px;
+  }
+
+  .func-ctrl {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 8px;
+    font-size: 16px;
+    color: var(--theme-primaryColor);
+  }
+
+  .func-ctrl:hover {
+    background: #f7f7f7;
+    cursor: pointer;
+  }
+
+  //
+  .layout-breadcrumb {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 8px;
+  }
+
+  .ant-breadcrumb {
+    font-size: 16px;
+
+    a {
+      color: var(--text-color-secondary);
+    }
+
+    a:hover {
+      color: var(--theme-primaryColor);
+      background-color: transparent;
+    }
+
+    li:last-child {
+      color: var(--text-color-primary);
+    }
+
+    ol {
+      flex-direction: row;
+    }
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  //
+  .layout-file-list {
+    position: relative;
+    flex: 1;
+  }
+
+  .upload-able {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .drag-hint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.1);
+    border: 3px dashed rgb(204, 204, 204);
+    color: rgb(153, 153, 153);
+    font-size: 40px;
+    text-align: center;
+  }
+
+  //
+  .folder-title,
+  .file-title {
+    display: flex;
+    align-items: center;
+    height: 26px;
+
+    .file-icon {
+      font-size: 16px;
+      color: rgb(51, 51, 51);
+      margin: 0px 12px;
+    }
+
+    .file-text {
+      font-size: 15px;
+      color: var(--theme-primaryColor);
+    }
+  }
+
+  .file-title>.file-text {
+    color: var(--text-color-primary);
+  }
+
+  .folder-title:hover {
+    background: rgb(247, 247, 247);
+  }
+
+  //
+  .file-ctrl {
+    display: flex;
+    align-items: center;
+    height: 24px;
+
+    * {
+      font-size: 12px;
+      margin: 0px 12px;
+    }
+
+    .file-open,
+    .file-download,
+    .file-apk {
+      cursor: pointer;
+      color: var(--theme-primaryColor);
+
+      &:hover {
+        color: var(--theme-primaryColor);
+      }
+    }
+
+    .file-delete {
+      cursor: pointer;
+      color: var(--text-color-secondary);
+
+      &:hover {
+        color: var(--text-color-secondary);
+      }
+    }
+
+    .file-date,
+    .file-info {
+      color: var(--text-color-primary);
+    }
+  }
+}
+
+//
+.ant-upload.ant-upload-drag .ant-upload {
+  padding: 0 0px;
+}
+
+.ant-upload.ant-upload-drag {
+  background: transparent;
+  border: none;
+}
+
+.ant-upload-list-item {
+  margin-top: 0px;
+}
+
+.ant-upload-list.ant-upload-list-text {
+  padding-bottom: 8px;
+}
+
+.ant-progress.ant-progress-status-success .ant-progress-bg {
+  background-color: var(--theme-primaryColor);
+}
+
+.layout-upload-list {
+  position: absolute;
+  width: 720px;
+  max-width: calc(100% - 60px);
+  right: 30px;
+  bottom: 0px;
+  display: block;
+  visibility: visible;
+  z-index: 42;
+  background: #fff;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0 0 10px #ccc;
+  overflow: hidden;
+
+  .upload-title {
+    display: flex;
+    height: 48px;
+    align-items: center;
+
+    .upload-state {
+      flex: 1;
+
+      .upload-state-text {
+        margin: 0px 0px 0px 12px;
+        font-size: 14px;
+      }
+    }
+
+    .upload-icon {
+      margin: 0px 12px 0px 0px;
+      font-size: 24px;
+      padding: 4px;
+      color: #000;
+      cursor: pointer;
+    }
+  }
+
+  .upload-list {
+    height: 300px;
+    padding: 0px 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}

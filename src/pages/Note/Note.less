@@ -1,0 +1,96 @@
+.layout-note {
+  width: 100%;
+  height: calc(100vh - 48px);
+  display: flex;
+  flex-direction: column;
+
+  //
+  .layout-func {
+    display: flex;
+    height: 40px;
+
+    .func-ctrl {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      line-height: 100%;
+      padding: 0 8px;
+      font-size: 16px;
+      color: var(--theme-primaryColor);
+    }
+
+    .func-ctrl:hover {
+      background: #f7f7f7;
+      cursor: pointer;
+    }
+  }
+
+  .layout-content {
+    position: relative;
+    flex: 1;
+
+    .layout-scroll {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+    }
+  }
+
+  .note-title {
+    display: flex;
+    align-items: center;
+    height: 26px;
+    padding-right: 20px;
+
+    .note-icon {
+      font-size: 16px;
+      color: rgb(51, 51, 51);
+      margin: 0px 12px;
+    }
+
+    .note-text {
+      font-size: 15px;
+      color: var(--text-color-primary);
+
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .note-ctrl {
+    display: flex;
+    align-items: center;
+    height: 24px;
+
+    * {
+      font-size: 12px;
+      margin: 0px 12px;
+    }
+
+    .note-ctrl-btn {
+      cursor: pointer;
+      color: var(--theme-primaryColor);
+
+      &:hover {
+        color: var(--theme-primaryColor);
+      }
+    }
+
+    .note-ctrl-btn2 {
+      cursor: pointer;
+      color: var(--text-color-secondary);
+
+      &:hover {
+        color: var(--text-color-secondary);
+      }
+    }
+
+    .note-date {
+      color: var(--text-color-primary);
+    }
+  }
+}

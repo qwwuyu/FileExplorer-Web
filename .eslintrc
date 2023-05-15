@@ -1,0 +1,27 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "no-unused-vars": "off",
+    "semi": ["error", "always"],
+    "quotes": ["error", "single"],
+    "indent": "off",
+    "dot-notation": "error",
+    "import/first": "off",
+    "import/no-named-as-default": "off",
+    "no-plusplus": "off",
+    "no-restricted-globals": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/dot-notation": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/consistent-type-assertions": "off",
+    "@typescript-eslint/prefer-optional-chain": "off",
+    "@typescript-eslint/no-shadow": "off"
+  },
+  "parserOptions": {
+    "project": [
+      "./tsconfig.json"
+    ]
+  }
+}

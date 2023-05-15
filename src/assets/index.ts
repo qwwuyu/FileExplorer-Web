@@ -1,0 +1,1 @@
+export { default as icIcon } from './ic_icon.png';
